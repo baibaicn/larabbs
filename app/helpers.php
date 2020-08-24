@@ -1,4 +1,4 @@
-<?
+<?php
 
 function route_class()
 {
@@ -53,3 +53,5 @@ function model_plural_name($model)
 	// 获取子串的复数形式
 	return Str::plural($snake_case_name);
 }
+
+

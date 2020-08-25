@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Http\Resource\Json\Resource;
+use Illuminate\Http\Resources\Json\Resource;
 use App\Observers\UserObserver;
 use App\Observers\ReplyObserver;
 use App\Observers\TopicObserver;

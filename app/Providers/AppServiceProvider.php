@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Http\Resource\Json\Resource;
 use App\Observers\UserObserver;
 use App\Observers\ReplyObserver;
 use App\Observers\TopicObserver;
@@ -29,5 +30,6 @@ class AppServiceProvider extends ServiceProvider
         Reply::observe(ReplyObserver::class);
         Topic::observe(TopicObserver::class);
         Link::observe(LinkObserver::class);
-    }
+		Resource::withoutWrapping();
+	}
 }

@@ -86,6 +86,10 @@ class Kernel extends HttpKernel
         
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         
+
+		// 接口语言设置
+		'change-locale' => \App\Http\Middleware\ChangeLocale::class,
+
         // 用户授权功能
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         

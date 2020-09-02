@@ -4,7 +4,8 @@ use Illuminate\Http\Request;
 
 Route::prefix('v1')
 	->namespace('Api')
-	->name('api.v1.')
+	->middleware('change-locale')
+	->name('api.v1.')	
 	->group(function() {
 	
 		Route::middleware('throttle:' . config('api.rate_limits.sign'))
